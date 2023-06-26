@@ -47,7 +47,10 @@ def move(dice_number, player_position, player):
     if dice_number == 6:
         print("You get another chance...")
     
-    if new_position in snakes:
+    if new_position > 100:
+        print("Oops! You need to roll the exact number to reach 100. Stay in your previous position.")
+        new_position = player_position
+    elif new_position in snakes:
         new_position = snakes[new_position]
         print(f"OOPS! You have moved to {new_position} due to a ~~~~~~~~~:) bite")
     elif new_position in ladders:

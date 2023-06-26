@@ -10,4 +10,8 @@ _____________________________________________________________________________
 
 SCREENSHOT:
 
-![image](https://github.com/adityasatuluri/Snake-and-ladder-python/assets/118589224/a3a757e4-e8ca-41d3-a37d-86e0c82cddec)
+![image](https://github.com/adityasatuluri/Snake-and-ladder-python/assets/118589224/6cc6ad6c-436a-46c9-8341-304300d5b08b)
+
+![image](https://github.com/adityasatuluri/Snake-and-ladder-python/assets/118589224/2d8d9fd2-43c9-419d-a172-5d8a2361fb9a)
+
+

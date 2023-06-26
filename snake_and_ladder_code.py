@@ -5,10 +5,9 @@ import sys
 
 #------------------------------GLOBAL VARIABLES--------------------------------
 
-dice = 6
 
-snakes = {98: 12, 77: 39, 69: 1, 31: 23, 20: 15, 61: 45}
-ladders = {46: 67, 43: 48, 22: 51, 36: 52, 6: 25, 13: 32}
+snakes = {98: 12, 77: 30, 69: 35, 31: 8, 20: 5, 61: 18}
+ladders = {46: 68, 43: 52, 22: 37, 36: 49, 6: 18, 13: 28}
 
 
 #----------------------------------FUNCTIONS------------------------------------
@@ -70,7 +69,12 @@ def check(player_position, player):
 
 
 def roll_dice():
-    return random.randint(1, dice)
+    # Define a list of probabilities for each dice outcome
+    dice_probabilities = [1, 2, 3, 4, 5, 6] 
+    # Choose a random outcome based on the probabilities
+    dice_number = random.choices(dice_probabilities, weights=[3, 1, 2, 1, 1, 2])[0]
+    
+    return dice_number
 
 class ANSI_1():
     def background(code):
@@ -102,7 +106,7 @@ def board(player1_pos, player2_pos):
     
     print(output)
 
-#-------------------------------------------------------------------------------
+#-------------------------------MAIN----------------------------------------
 
 rules()
 player1, player2 = names()
@@ -112,6 +116,7 @@ time.sleep(2)
 os.system('clear')
 player1_pos = 0
 player2_pos = 0
+ptemp=0
 chance = 1
 
 while True:
@@ -123,6 +128,7 @@ while True:
         input(f"{player1}, press ENTER to roll the dice: ")
         dice_number = roll_dice()
         player1_pos = move(dice_number, player1_pos, player1)
+        check(player1_pos, player1)
         input('Press ENTER to continue:')
     else:
         board(player1_pos, player2_pos)

@@ -7,7 +7,7 @@ The Snake and Ladder game is played with two players. The objective of the game 
 Let's have fun playing the Snake and Ladder game!
 
 _____________________________________________________________________________
-<pre>NOTE: It's best to run this as in VSCODE, somw online compiler may not support some ANSI codes.</pre>
+<pre>NOTE: It's best to run this on 'VSCODE' or 'ONLINEGDB.COM' , as some online compilers may not support some ANSI codes.</pre>
 _____________________________________________________________________________
 
 SCREENSHOTS:

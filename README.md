@@ -7,8 +7,10 @@ The Snake and Ladder game is played with two players. The objective of the game 
 Let's have fun playing the Snake and Ladder game!
 
 _____________________________________________________________________________
+<pre>NOTE: It's best to run this as in VSCODE, somw online compiler may not support some ANSI codes.</pre>
+_____________________________________________________________________________
 
-SCREENSHOT:
+SCREENSHOTS:
 
 ![image](https://github.com/adityasatuluri/Snake-and-ladder-python/assets/118589224/6cc6ad6c-436a-46c9-8341-304300d5b08b)
 
